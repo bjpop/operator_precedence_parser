@@ -1,7 +1,7 @@
 operators = {"*": 2, "/": 2, "+": 1, "-": 1}
 
 def takes_precedence(op1, op2):
-    return operators[op1] > operators[op2]
+    return operators[op1] >= operators[op2]
 
 def valid_op(tok):
     return tok in operators
